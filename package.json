@@ -1,0 +1,33 @@
+{
+  "name": "ts-react-parcel-template",
+  "version": "0.0.1",
+  "description": "React App With Typescript, Build by Parcel",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fumihumi/ts-react-parcel-template.git"
+  },
+  "keywords": [],
+  "author": "fumihumi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fumihumi/ts-react-parcel-template/issues"
+  },
+  "homepage": "https://github.com/fumihumi/ts-react-parcel-template#readme",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.15",
+    "@types/react-dom": "^16.9.4",
+    "parcel": "^1.12.4",
+    "typescript": "^3.7.3"
+  }
+}
