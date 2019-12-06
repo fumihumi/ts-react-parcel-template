@@ -4,7 +4,9 @@
   "description": "React App With Typescript, Build by Parcel",
   "main": "src/index.js",
   "scripts": {
-    "dev": "parcel ./src/index.html",
+    "dev": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
+    "start": "parcel ./src/index.html",
+    "type-check:watch": "tsc --noEmit --watch",
     "lint": "npx eslint src/**/*.ts*"
   },
   "directories": {
@@ -30,6 +32,7 @@
     "@types/react-dom": "^16.9.4",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
+    "concurrently": "^5.0.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
