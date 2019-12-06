@@ -1,0 +1,48 @@
+{
+  "name": "ts-react-parcel-template",
+  "version": "0.0.1",
+  "description": "React App With Typescript, Build by Parcel",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
+    "start": "parcel ./src/index.html",
+    "type-check:watch": "tsc --noEmit --watch",
+    "lint": "npx eslint src/**/*.ts*"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fumihumi/ts-react-parcel-template.git"
+  },
+  "keywords": [],
+  "author": "fumihumi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fumihumi/ts-react-parcel-template/issues"
+  },
+  "homepage": "https://github.com/fumihumi/ts-react-parcel-template#readme",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.15",
+    "@types/react-dom": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "concurrently": "^5.0.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "parcel": "^1.12.4",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.3"
+  }
+}
